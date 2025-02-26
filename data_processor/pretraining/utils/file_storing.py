@@ -3,7 +3,6 @@ import numpy as np
 import torch
 
 def save_representations(esm_ratios, weight_path, train_esm, test_esm, train_embed, test_embed, train_df, test_df, device):
-    """保存预训练的表示向量"""
     for esm_ratio in esm_ratios:
         save_path = os.path.join(weight_path, str(esm_ratio))
         os.makedirs(save_path, exist_ok=True)

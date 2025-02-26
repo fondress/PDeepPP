@@ -4,9 +4,8 @@ import torch
 from datetime import datetime
 
 def setup_directories(ptm_name):
-    """创建按ptm_name组织的目录"""
-    model_dir = f'../train_test/models/{ptm_name}'
-    result_dir = f'../train_test/results/{ptm_name}'
+    model_dir = f'./train_test/models/{ptm_name}'
+    result_dir = f'./train_test/results/{ptm_name}'
     
     os.makedirs(model_dir, exist_ok=True)
     os.makedirs(result_dir, exist_ok=True)
@@ -14,7 +13,6 @@ def setup_directories(ptm_name):
     return model_dir, result_dir
 
 def save_artifacts(model_dir, result_dir, model, metrics, params):
-    """统一保存模型和结果"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # 保存模型

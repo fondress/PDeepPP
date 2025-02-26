@@ -2,12 +2,11 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader, random_split
 import numpy as np
 
-def get_dataloaders(batch_size):
-    # 假设数据已经预处理为.npy文件
-    train_data = np.load("train_data.npy")
-    train_labels = np.load("train_labels.npy")
-    test_data = np.load("test_data.npy")
-    test_labels = np.load("test_labels.npy")
+def get_dataloaders(batch_size, args):
+    train_data = np.load(f"./data_processor/data_storage/{args.ptm_type}/train_representations.npy")
+    train_labels = np.load(f"./data_processor/data_storage/{args.ptm_type}/test_representations.npy")
+    test_data = np.load(f"./data_processor/data_storage/{args.ptm_type}/train_labels.npy")
+    test_labels = np.load(f"./data_processor/data_storage/{args.ptm_type}/test_labels.npy")
 
     X_train = torch.tensor(train_data, dtype=torch.float32)
     y_train = torch.tensor(train_labels, dtype=torch.float32)

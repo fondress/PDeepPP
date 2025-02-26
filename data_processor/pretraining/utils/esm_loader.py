@@ -7,7 +7,6 @@ def load_esm_model(device):
     return model.to(device), alphabet.get_batch_converter()
 
 def extract_representations(model, batch_converter, data_iterator, device):
-    """提取 ESM 预训练表示向量"""
     model.eval()
     representations = []
     for batch_data in data_iterator:

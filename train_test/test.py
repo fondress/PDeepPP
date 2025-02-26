@@ -24,7 +24,7 @@ _, _, test_loader, input_size, output_size = get_dataloaders(batch_size=32)
 predict_module = PredictModule(input_size, output_size).to(device)
 
 # Load model checkpoint
-checkpoint_path = f'../train_test/models/{args.ptm_name}_{args.lambda_}_esm_{args.esm_ratio}.pth'
+checkpoint_path = f'./train_test/models/{args.ptm_name}_{args.lambda_}_esm_{args.esm_ratio}.pth'
 checkpoint = torch.load(checkpoint_path)
 predict_module.load_state_dict(checkpoint['model_state_dict'])
 predict_module.eval()
@@ -62,7 +62,7 @@ results_df = pd.DataFrame({
     'OriginalLabel': test_labels_np.flatten()
 })
 
-save_dir = os.path.join(f'../train_test/results/{args.ptm_name}')
+save_dir = os.path.join(f'./train_test/results/{args.ptm_name}')
 os.makedirs(save_dir, exist_ok=True)
 save_path = os.path.join(save_dir, f'{args.ptm_name}_{args.esm_ratio}_lambda_{args.lambda_}.csv')
 results_df.to_csv(save_path, index=False)
