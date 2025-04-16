@@ -70,12 +70,11 @@ The prediction results are saved in:
 
 ## ✈️ Using a Pre-trained Model for Prediction
 
-Pre-trained models are stored exclusively on Hugging Face at the following repository:  
+Pre-trained models are stored exclusively on Hugging Face at the following repository(main repository):  
 [https://huggingface.co/fondress/PDeppPP](https://huggingface.co/fondress/PDeppPP).  
 
 Each dataset's corresponding Hugging Face repository contains the specific model in the correct format.  
-You can access these dataset-specific repositories directly from the main repository:  
-[https://huggingface.co/fondress/PDeppPP](https://huggingface.co/fondress/PDeppPP).
+You can access these dataset-specific repositories directly from the main repository
 
 To use a pre-trained model, update the model loading path in `test.py` to the Hugging Face download location:  
 
