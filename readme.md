@@ -70,14 +70,20 @@ The prediction results are saved in:
 
 ## ✈️ Using a Pre-trained Model for Prediction
 
-The model that has been trained and verified as the best parameter combination has been placed in the ./models folder,simply modify the model loading path in test.py.  
-Update this line in test.py:
+Pre-trained models are stored exclusively on Hugging Face at the following repository:  
+[https://huggingface.co/fondress/PDeppPP](https://huggingface.co/fondress/PDeppPP).  
 
-    checkpoint_path = f'./model/<PTM_name>.pth'
+Each dataset's corresponding Hugging Face repository contains the specific model in the correct format.  
+You can access these dataset-specific repositories directly from the main repository:  
+[https://huggingface.co/fondress/PDeppPP](https://huggingface.co/fondress/PDeppPP).
 
-Run the test script:
+To use a pre-trained model, update the model loading path in `test.py` to the Hugging Face download location:  
+
+    checkpoint_path = '<HuggingFace_model_download_path>'
+
+Then, run the test script:
 
     python test.py --esm_ratio <value> --lambda_ <value> --ptm_name <PTM_type>
 
-This will use the pre-trained model stored in the ./model/ directory for prediction without retraining.
+This will use the pre-trained model downloaded from the Hugging Face repository for prediction without retraining.
 
