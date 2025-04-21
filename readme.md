@@ -1,4 +1,4 @@
-# PDeepPP
+# PDeepPP:A general language model for peptide identification
 
 To install dependencies, run:
 
