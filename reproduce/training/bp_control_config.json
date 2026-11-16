@@ -1,0 +1,59 @@
+{
+ "project_name": "R7_fig2_bp_ctl30_paper",
+ "seeds": [
+  42,
+  43,
+  44,
+  45,
+  46
+ ],
+ "split_seeds": [
+  42
+ ],
+ "batch_size": 512,
+ "amp": true,
+ "prefetch_factor": 4,
+ "learning_rate": 0.001,
+ "max_epochs": 100,
+ "early_stopping_patience": 20,
+ "selection_metric": "pr_auc",
+ "esm_ratios": [
+  0.9,
+  0.95,
+  1.0
+ ],
+ "lambda_values": [
+  0.5,
+  1,
+  2
+ ],
+ "models": [
+  "esm_linear",
+  "esm_mlp"
+ ],
+ "device": "cuda",
+ "gpus": [
+  0
+ ],
+ "num_workers": 0,
+ "loss_name": "tim_paper",
+ "bp_embedding_pipeline": "unidl_aligned",
+ "embeddings_root": "",
+ "esm_model_path": "",
+ "esm_batch_size": 64,
+ "embedding_device": "cuda",
+ "embedding_shard_size": 1000,
+ "embedding_seed": 42,
+ "pdeeppp_model_kwargs": {
+  "output_size": 128,
+  "use_position_encoding": true,
+  "transformer_heads": 8,
+  "transformer_hidden": 256,
+  "transformer_layers": 4,
+  "transformer_ff_dim": 512,
+  "cnn_channels": 64,
+  "fusion_channels": 32,
+  "dropout": 0.15
+ },
+ "control_lambda": 2
+}

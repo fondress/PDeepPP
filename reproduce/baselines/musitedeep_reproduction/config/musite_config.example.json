@@ -1,0 +1,17 @@
+{
+  "project_name": "MusiteDeep_reproduction",
+  "seeds": [42, 43, 44, 45, 46],
+  "split_seed": 42,
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "cluster_identity": 0.3,
+  "selection_metric": "pr_auc",
+  "models": ["musitedeep"],
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "max_epochs": 100,
+  "early_stopping_patience": 20,
+  "device": "auto",
+  "num_workers": 0,
+  "output_root": "outputs"
+}

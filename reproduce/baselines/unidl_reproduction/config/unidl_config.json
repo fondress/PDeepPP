@@ -1,0 +1,23 @@
+{
+  "project_name": "UniDL4BioPep_reproduction",
+  "seeds": [42,43,44,45,46],
+  "split_seed": 42,
+  "test_size": 0.2,
+  "val_size": 0.1,
+  "selection_metric": "pr_auc",
+  "models": ["unidl"],
+  "batch_size": 128,
+  "learning_rate": 0.07,
+  "max_epochs": 100,
+  "early_stopping_patience": 20,
+  "device": "auto",
+  "num_workers": 8,
+  "esm_ratios": [1.0],
+  "lambda_values": [1.0],
+  "output_root": "outputs",
+  "esm_model_path": "",
+  "gpus": [0,1,2,3,4,5,6,7],
+  "max_workers": 8,
+  "esm_batch_size": 32,
+  "esm_max_tokens": 1024
+}

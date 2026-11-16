@@ -1,0 +1,14 @@
+task,article_task_name,task_type,fasta_path,center_residues,negative_source,primary_benchmark
+Hydroxylysine_K,Hydroxylysine,PTM,,K,annotated FASTA unmarked focus residues,yes
+Hydroxyproline_P,Hydroxyproline,PTM,,P,annotated FASTA unmarked focus residues,yes
+Methyllysine_K,Methyllysine,PTM,,K,annotated FASTA unmarked focus residues,yes
+Methylarginine_R,Methylarginine,PTM,,R,annotated FASTA unmarked focus residues,yes
+N6-acetyllysine_K,N6-acetyllysine,PTM,,K,annotated FASTA unmarked focus residues,yes
+N-linked_glycosylation_N,N-linked glycosylation,PTM,,N,annotated FASTA unmarked focus residues,yes
+O-linked_glycosylation_ST,O-linked glycosylation,PTM,,ST,annotated FASTA unmarked focus residues,yes
+Phosphotyrosine_Y,Phosphotyrosine,PTM,,Y,annotated FASTA unmarked focus residues,yes
+Phosphoserine_threonine_ST,Phosphoserine/threonine,PTM,,ST,annotated FASTA unmarked focus residues,yes
+Pyrrolidone_carboxylic_acid_Q,Pyrrolidone-carboxylic-acid,PTM,,Q,annotated FASTA unmarked focus residues,yes
+S_palmitoylation_C,S-palmitoylation,PTM,,C,annotated FASTA unmarked focus residues,yes
+SUMOylation_K,SUMOylation,PTM,,K,annotated FASTA unmarked focus residues,yes
+Ubiquitination_K,Ubiquitination,PTM,,K,annotated FASTA unmarked focus residues,yes

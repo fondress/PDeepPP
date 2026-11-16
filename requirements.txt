@@ -1,8 +1,8 @@
-torch>=1.10.0  
-fair-esm>=2.0.0  
-numpy>=1.19.0  
-pandas>=1.1.0  
-argparse  
-scikit-learn>=0.24.0  
-python>=3.7  
-openpyxl>=3.0.0  
+torch==2.6.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+fair-esm==2.0.0
+timm
+openpyxl
